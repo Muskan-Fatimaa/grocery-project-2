@@ -1,5 +1,3 @@
-
-
 import 'package:flutter/material.dart';
 import 'package:grocery_app/models/cart_item_model.dart';
 import 'package:grocery_app/screens/delivery_address/delivery_address_page.dart';

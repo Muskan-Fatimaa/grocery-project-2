@@ -49,34 +49,3 @@ if (discountPercent != null) 'discountPercent': discountPercent,
 }
 
 
-// ── firestore_service.dart ────────────────────────────────────────────────────
-// Save this file as: lib/services/firestore_service.dart
-// (Keep this in a separate file in your project — shown together here for clarity)
-
-// import 'package:cloud_firestore/cloud_firestore.dart';
-// import '../models/product_model.dart';
-//
-// class FirestoreService {
-//   final FirebaseFirestore _db = FirebaseFirestore.instance;
-//
-//   Stream<List<ProductModel>> getProducts() {
-//     return _db.collection('products').snapshots().map((snapshot) {
-//       return snapshot.docs.map((doc) {
-//         return ProductModel.fromMap(doc.id, doc.data());
-//       }).toList();
-//     });
-//   }
-//
-//   Stream<List<ProductModel>> getProductsByCategory(String category) {
-//     return _db
-//         .collection('products')
-//         .where('category', isEqualTo: category)
-//         .snapshots()
-//         .map((snap) =>
-//             snap.docs.map((doc) => ProductModel.fromMap(doc.id, doc.data())).toList());
-//   }
-//
-//   Future<void> addProduct(ProductModel product) {
-//     return _db.collection('products').add(product.toMap());
-//   }
-// }

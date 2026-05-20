@@ -1,5 +1,4 @@
 
-
 class TrendingProduct {
   final String name;
   final String weight;
